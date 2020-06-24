@@ -1,5 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import "../styles/home.scss";
+import HomeComponent from "../components/homeComponent";
 
 export default function Home() {
   return (
@@ -9,7 +11,8 @@ export default function Home() {
         <title>Dayenne Souza</title>
         <meta name="description" content="Dayenne's Personal Portfolio"></meta>
       </Helmet>
-      <div>Hello Day!</div>
+
+      <HomeComponent />
     </>
   );
 }

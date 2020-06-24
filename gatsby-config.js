@@ -10,5 +10,5 @@ module.exports = {
     description: `Dayenne Souza's portfolio.`,
     author: `@dayesouza`,
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
 };
