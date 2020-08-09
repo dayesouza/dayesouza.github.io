@@ -1,5 +1,7 @@
 name: Gatsby Publish
 
+language: node_js
+
 on:
   push:
     branches:
