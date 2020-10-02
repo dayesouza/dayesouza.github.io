@@ -9,6 +9,7 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Dayenne Souza</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet"/>
         <meta name="description" content="Dayenne's Personal Portfolio"></meta>
       </Helmet>
 
