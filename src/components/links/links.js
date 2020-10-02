@@ -1,12 +1,35 @@
 import React from "react";
+import LinkWithIcon from "../LinkWithIcon/LinkWithIcon";
+
+import { useStaticQuery, graphql } from "gatsby";
 
 export function Links() {
+  const resumePdf = useStaticQuery(graphql`
+    {
+      pdf: file(name: { eq: "Resume_dayenne" }) {
+        name
+        extension
+        publicURL
+      }
+    }
+  `);
+
   return (
-    <div class="flex-row space-between">
-      <span>Gihutb</span>
-      <span>Resume</span>
-      <span>Email</span>
-      <span>Linkedin</span>
+    <div className="flex-row space-between">
+      <LinkWithIcon
+        url="https://www.linkedin.com/in/dayenne-souza/"
+        icon={["fab", "linkedin-in"]}
+      />
+      <LinkWithIcon
+        url="https://github.com/dayesouza"
+        icon={["fab", "github"]}
+      />
+      <LinkWithIcon
+        target="_self"
+        url="mailto:day.carol18@gmail.com?subject=From%20your%20website"
+        icon="envelope"
+      />
+      <LinkWithIcon url={resumePdf.pdf.publicURL} icon="scroll" />
     </div>
   );
 }

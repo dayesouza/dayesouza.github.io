@@ -1,4 +1,6 @@
-.white-board {
+@import "./variables.scss";
+
+.whiteBoard {
   width: 80%;
   height: 80%;
   position: fixed;
@@ -8,6 +10,43 @@
   color: black;
 }
 
-.greeting {
+.greeting__name {
   font-size: 4em;
+}
+.greeting__details {
+  color: $grey;
+}
+
+.link__home {
+  color: black;
+  font-size: 22px;
+  transition: 0.3s;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  svg {
+    padding: 0.2rem;
+  }
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.photo__home {
+  height: 70vh;
+  width: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .flex-home {
+    flex-direction: column;
+  }
 }
