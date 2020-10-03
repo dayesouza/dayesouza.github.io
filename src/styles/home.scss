@@ -41,10 +41,15 @@
 }
 
 @media only screen and (min-width: 700px) {
-  .photo__home {
+  .photo__home--web,
+  .photo__home--mobile {
     height: 70vh;
     width: auto;
     margin-top: 20px;
+  }
+
+  .photo__home--mobile {
+    display: none;
   }
 
   .whiteBoard {
@@ -54,7 +59,11 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .photo__home--web {
+    display: none;
+  }
+
   .flex-home {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
