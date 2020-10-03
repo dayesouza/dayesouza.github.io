@@ -9,6 +9,7 @@
   left: 10%;
   background-color: white;
   color: black;
+  overflow: auto;
 }
 
 .greeting__name {
@@ -20,7 +21,7 @@
 
 .link__home {
   color: black;
-  font-size: 22px;
+  font-size: 2rem;
   transition: 0.3s;
   padding: 1rem;
   text-decoration: none;
@@ -65,5 +66,9 @@
 
   .flex-home {
     flex-direction: column-reverse;
+  }
+
+  div.whiteBoard {
+    position: relative;
   }
 }

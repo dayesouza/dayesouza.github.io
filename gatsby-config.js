@@ -28,5 +28,18 @@ module.exports = {
         trackingId: "UA-168344945-1",
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Dayenne Souza`,
+        short_name: `Day`,
+        icon: `src/assets/logo_black.png`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };

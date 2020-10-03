@@ -24,7 +24,6 @@ function Photo() {
 
   return (
     <>
-      {console.log(imgQuery)}
       <Img
         className="photo__home--web"
         imgStyle={{ objectFit: "contain" }}
