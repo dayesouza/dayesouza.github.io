@@ -3,7 +3,7 @@ import LinkWithIcon from "../LinkWithIcon/LinkWithIcon";
 
 import { useStaticQuery, graphql } from "gatsby";
 
-export function Links() {
+export default function Links() {
   const resumePdf = useStaticQuery(graphql`
     {
       pdf: file(name: { eq: "Resume_dayenne" }) {
