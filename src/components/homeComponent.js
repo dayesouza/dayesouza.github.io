@@ -1,6 +1,6 @@
 import React from "react";
 import Photo from "./photo/photo";
-import { Links } from "./links/Links";
+import Links from "./links/links";
 
 export default function HomeComponent(props) {
   return (
